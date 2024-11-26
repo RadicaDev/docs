@@ -30,12 +30,8 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="NFC and Blockchain Based Authentication"
-    >
+    <Layout title="Home" description="NFC and Blockchain Based Authentication">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
