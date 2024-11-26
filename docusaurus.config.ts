@@ -40,8 +40,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/RadicaDev/docs/tree/main/",
+          editUrl: "https://github.com/RadicaDev/docs/tree/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -62,9 +61,9 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "docSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Docs",
         },
         {
           href: "https://github.com/RadicaDev",

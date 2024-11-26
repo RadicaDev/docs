@@ -1,0 +1,17 @@
+@startuml
+
+participant "NFC Tag" as NFCTag
+actor User
+participant "Blockchain" as Blockchain
+
+NFCTag <- User: Send Challenge
+
+NFCTag --> User: Return Signature of Challenge
+
+User -> User: Recover Address by\nVerifying Signature
+
+User -> Blockchain: Query Certificate\nfor Recovered Address
+
+User <-- Blockchain: Return Certificate
+
+@enduml
