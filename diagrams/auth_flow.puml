@@ -10,7 +10,7 @@ endif
 
 :Recover Address from Signature;
 
-if (Query certificate from Blockchain\nfor the Associated to the Address) then (not found)
+if (Query certificate from Blockchain\nfor the Recovered Address) then (not found)
   #pink:Product is not authentic;
   end
 else
