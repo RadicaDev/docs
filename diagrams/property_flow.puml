@@ -1,0 +1,16 @@
+@startuml
+ 
+start
+
+:Read Proof from NFC Tag;
+
+:Claiming Property by\nCertificate ID\nwith Read Proof;
+
+if (hash of proof provided is equal\nto the hashed proof stored) then (no)
+  #pink:Proof does not match;
+  end
+else (yes)
+  #palegreen:Mint Ownership NFT\nto the requesting user;
+  stop
+
+@enduml
