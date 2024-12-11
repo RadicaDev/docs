@@ -12,7 +12,7 @@ The Radica Mobile App has three main sections:
 
 ## Verify
 
-The verify screen is the main screen of the app and it is what the user sees afeter the app is opened.
+The verify screen is the main screen of the app and it is what the user sees after the app is opened.
 
 <img src="/img/verify-screen.png" alt="verify screen" style={{maxHeight: 480}} />
 

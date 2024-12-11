@@ -31,7 +31,7 @@ For the Demo Project, the NFC used is the NTAG215 and not the ST25TA-E. The NTAG
 
 ## Mobile Application
 
-The mobile application interacts with the NFC tags to perform authentication. A random challenge is generated ad sent to the NFC tag to be signed. From the signature it is possible to recover a Blockchain address, you can refer to [Public Key Recovery](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm#Public_key_recovery) for more info.
+The mobile application interacts with the NFC tags to perform authentication. A random challenge is generated and sent to the NFC tag to be signed. From the signature it is possible to recover a Blockchain address, you can refer to [Public Key Recovery](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm#Public_key_recovery) for more info.
 
 The mobile application queries the **Radica Smart Contract** to verify the authenticity of the product. The smart contract stores the certificate of authenticity of the product.
 
