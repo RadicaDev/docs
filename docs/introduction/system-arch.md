@@ -23,7 +23,7 @@ Do not send any value and do not assign any permission to the recovered address.
 
 :::
 
-> **Note**: For the Demo Project, the NFC used is the NTAG215 and not the ST25TA-E. The NTAG216 does not support the ECDSA algorithm, so the authentication is simulated. Refer to ///TODO: Add reference to demo nfc docs.
+> **Note**: For the Demo Project, the NFC used is the NTAG215 and not the ST25TA-E. The NTAG215 does not support the ECDSA algorithm, so the authentication is simulated. Refer to ///TODO: Add reference to demo nfc docs.
 
 ## Mobile Application
 

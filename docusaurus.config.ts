@@ -69,6 +69,11 @@ const config: Config = {
           label: "Docs",
         },
         {
+          position: "left",
+          label: "Demo",
+          to: "docs/demo",
+        },
+        {
           href: "https://github.com/RadicaDev",
           label: "GitHub",
           position: "right",
