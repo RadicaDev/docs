@@ -44,7 +44,11 @@ The Online screen allows users to verify the authenticity of an online product b
 
 <img src="/img/online-screen.png" alt="online screen" style={{maxHeight: 480}} />
 
-> **Note**: This only shows the certificate associated to that product, but those are publically available informations and can be accessed by anyone. It is not proven that the product tag is valid, or that it even has a tag. The product has to be considered authentic only when the NFC Tag is scanned.
+:::info
+
+This only shows the certificate associated to that product, but those are publically available informations and can be accessed by anyone. It is not proven that the product tag is valid, or that it even has a tag. The product has to be considered authentic only when the NFC Tag is scanned.
+
+:::
 
 ## Wallet
 

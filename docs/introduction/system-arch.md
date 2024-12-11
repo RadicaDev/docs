@@ -17,13 +17,17 @@ This allows to authenticate the chip with an **Asymmetric CRA** (Challenge Respo
 
 Since the algorithm used is the same as the one used in the Blockchain, it is possible to **recover a Blockchain address** from the signature of the challenge.
 
-:::danger Beware
+:::danger
 
 Do not send any value and do not assign any permission to the recovered address. An attacker could let the chip sign a forged challenge containing a valid Blockchain transaction.
 
 :::
 
-> **Note**: For the Demo Project, the NFC used is the NTAG215 and not the ST25TA-E. The NTAG215 does not support the ECDSA algorithm, so the authentication is simulated. Refer to ///TODO: Add reference to demo nfc docs.
+:::note
+
+For the Demo Project, the NFC used is the NTAG215 and not the ST25TA-E. The NTAG215 does not support the ECDSA algorithm, so the authentication is simulated. Refer to [Demo](/docs/demo.md)
+
+:::
 
 ## Mobile Application
 

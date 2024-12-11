@@ -142,4 +142,37 @@ or scan the QR code below:
 
 <img src="/img/qr-code.png" alt="QR Code" width="200"/>
 
-> **Note**: Unfortunately, with the online authentication, you won't be able to experience all the features of the app. You won't be able to claim the ownership of the product, you can only do it if you are in possess of the physical tag.
+:::note
+
+Unfortunately, with the online authentication, you won't be able to experience all the features of the app. You won't be able to claim the ownership of the product, you can only do it if you are in possess of the physical tag.
+
+:::
+
+## Technical Details
+
+This section provides more technical details about the Radica Demo project.
+
+### NTC Tags
+
+The NFC Tags used cannot perform digital signatures on-chip, thus the authentication method is slightly different. The tag UID is signed by Radica's private key and the signature is stored on the chip. The signature algorithm used is the ECDSA with the secp256k1 elliptic curve, the same as evm blockchains use, and the same as the ST25TA-E tags use.
+
+The keys use to sign the tag are publically available for the demo. So that everibody can simulate the authentication process.
+
+The tag has the following memory layout:
+
+- **UID**: 8 bytes
+- **reserved**: 8 bytes
+- **Signature**: 68 bytes (65 + 3 of padding)
+- **Proof**: 32 bytes (added at certificate creation)
+
+The signature can be verified with the UID, the signature and the Radica address.
+
+## Tag Address
+
+The Tag address is derived from the signature. The private key is obtained as the keccak256 of the signature and the address is derived as in every EVM blockchain, thus compute the public key with the secp256k1 curve and then the address is computed as the last 20 bytes of the keccak256 of the public key.
+
+:::note
+
+A consideration is that the starting point to derive the address is the UID of the tag, which is only 8 bytes long, thus only 2^8 = 256 possible addresses can be derived from a single tag. This is not a limitation since the ECDSA signature includes a random element in the signature computation, which make two signatures of the same plaintext different. Even though two tags might have the same UID, their signature will be different, so will be their addresses.
+
+:::
