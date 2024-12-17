@@ -16,7 +16,7 @@ Downloading the Radica App from TestFlight is the easiest way to get started.
 
 In order to get access to the Radica App on TestFlight, you need to provide your Apple ID to the Radica team. Once you have been added to the TestFlight list, you will receive an email from Apple with instructions on how to download the app.
 
-Please send an email to [this email address](mailto:francescolaterza+radicademo00@gmail.com) specifying that you want to access Radica on TestFlight and your Name, Surname, and email address.
+Please send an email to [this email address](mailto:francescolaterza00+radicademo@gmail.com) specifying that you want to access Radica on TestFlight and your Name, Surname, and email address.
 
 ### Build from Source
 
