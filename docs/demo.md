@@ -16,7 +16,7 @@ Downloading the Radica App from TestFlight is the easiest way to get started.
 
 In order to get access to the Radica App on TestFlight, you need to provide your Apple ID to the Radica team. Once you have been added to the TestFlight list, you will receive an email from Apple with instructions on how to download the app.
 
-Please send an email to [this email address](mailto:francescolaterza00+radicademo@gmail.com) specifying that you want to access Radica on TestFlight and your Name, Surname, and email address.
+Please send an email to [cicciord@radica.dev](mailto:cicciord@radica.dev) specifying that you want to access Radica on TestFlight and your Name, Surname, and email address.
 
 ### Build from Source
 
@@ -83,6 +83,12 @@ The **ACR122U** is fully compatible, other readers may work but are not guarante
 Be sure to have **ISO 14443, Type A, NFC Forum Type 2** tags. Every tag that implements this standard will work. We used the **NTAG215** by NXP which are very easy to find and cheap online.
 
 To create a new product tag, follow these steps:
+
+:::note Note
+
+You can also find those instructions in the `radica-contracts` repository in the `demo` branch. They will be in the `README.md` file in the `Hedera Testnet` section.
+
+:::
 
 1. Clone the Radica repository from GitHub and checkout to the `demo` branch.:
 
