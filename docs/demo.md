@@ -6,6 +6,12 @@ sidebar_position: 5
 
 This section walks you through a demo of the Radica Project on the Hedera network. Follow the steps below to get started.
 
+:::note Note
+
+The Radica Project is currently available only on iOS devices. Unfortunately we do not had access to an Android device to test the application.
+
+:::
+
 ## Download the Radica App
 
 There are two ways to get the Radica App: **download from TestFlight** or **build from source**.
